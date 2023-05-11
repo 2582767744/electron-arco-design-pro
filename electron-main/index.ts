@@ -6,7 +6,7 @@ import {
   Menu,
   BrowserView,
 } from 'electron';
-import installExtension, { VUEJS3_DEVTOOLS } from 'electron-devtools-installer';
+
 import is_dev from 'electron-is-dev';
 import { join } from 'path';
 console.log('hello start');
@@ -54,19 +54,7 @@ class createWin {
 
 app
   .whenReady()
-  .then(() => new createWin())
-  .then(async () => {
-    try {
-      await installExtension(VUEJS3_DEVTOOLS);
-    } catch (e) {
-      console.error('Vue Devtools failed to install:', e.toString());
-    }
-  });
-
-await installExtension({
-  id: 'ljjemllljcmogpfapbkkighbhhppjdbg', // vue3拓展id
-  electron: '>=1.2.1',
-});
+  .then(() => new createWin());
 
 const isFirstInstance = app.requestSingleInstanceLock();
 
