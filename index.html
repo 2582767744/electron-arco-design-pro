@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" background-color:#fff0 !important>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="shortcut icon" type="image/x-icon"
+    href="https://unpkg.byted-static.com/latest/byted/arco-config/assets/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>任务管理器</title>
+</head>
+
+<body style="-webkit-app-region: drag;background: #fff0;" class="body-now">
+  <div id="app"></div>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+<style>
+  #app {
+    box-sizing: border-box;
+    border-radius: 20px;
+    /* border: 1px solid green; */
+    background-color: var(--color-bg-1);
+    overflow: hidden;
+    pointer-events: auto;
+    box-shadow: 12px rgba(0, 0, 0, 0.12);
+  }
+
+  .body-now::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+    /**/
+  }
+
+  .body-now::-webkit-scrollbar-track {
+    background: rgb(239, 239, 239);
+    border-radius: 2px;
+  }
+
+  .body-now::-webkit-scrollbar-thumb {
+    background: #bfbfbf;
+    border-radius: 10px;
+  }
+
+  .body-now::-webkit-scrollbar-thumb:hover {
+    background: #333;
+  }
+
+  .body-now::-webkit-scrollbar-corner {
+    background: #179a16;
+  }
+</style>
+
+</html>
