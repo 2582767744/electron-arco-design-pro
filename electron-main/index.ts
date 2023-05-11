@@ -6,7 +6,6 @@ import {
   Menu,
   BrowserView,
 } from 'electron';
-
 import is_dev from 'electron-is-dev';
 import { join } from 'path';
 console.log('hello start');
