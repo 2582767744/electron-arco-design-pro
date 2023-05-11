@@ -54,7 +54,7 @@ class createWin {
 app
   .whenReady()
   .then(() => new createWin());
-
+  
 const isFirstInstance = app.requestSingleInstanceLock();
 
 if (!isFirstInstance) {
